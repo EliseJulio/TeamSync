@@ -4,7 +4,7 @@ TeamSync is a task management and collaboration platform built for students, you
 
 ## 🚀 Live Demo
 
-🔗 
+🔗https://team-sync-tau.vercel.app
 
 ---
 
