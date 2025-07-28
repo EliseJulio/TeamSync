@@ -54,4 +54,9 @@ router.post("/reset-password/:resetPasswordToken", resetPassword);
 // change password ---> user must be logged in
 router.patch("/change-password", protect, changePassword);
 
+// Test route (no auth needed)
+router.get("/test", (req, res) => {
+  res.json({ message: "User routes working!" });
+});
+
 export default router;
