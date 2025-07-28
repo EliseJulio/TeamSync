@@ -59,4 +59,6 @@ router.get("/test", (req, res) => {
   res.json({ message: "User routes working!" });
 });
 
+app.use(morgan("dev"));
+
 export default router;
