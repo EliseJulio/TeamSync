@@ -5,6 +5,7 @@ import connect from "./src/db/connect.js";
 import cookieParser from "cookie-parser";
 import fs from "node:fs";
 import errorHandler from "./src/helpers/errorhandler.js";
+import morgan from "morgan";
 
 dotenv.config();
 
@@ -52,5 +53,8 @@ const server = async () => {
     process.exit(1);
   }
 };
+
+app.use(morgan("dev"));
+
 
 server();
